@@ -69,7 +69,7 @@ export default function LandingPage() {
                 ))}
               </div>
               <p className="text-white/80 text-sm leading-relaxed">
-                "Perdi 8kg em 3 meses sem deixar de comer o que gosto. O app monta o treino e a dieta certinho pro meu objetivo. Não acreditava que funcionaria tão rápido."
+                "Estou usando Mounjaro e o FitProMax foi essencial pra potencializar os resultados. Ele ajustou minha dieta com as calorias certas e me deu treinos leves no começo. Perdi 11kg em 2 meses sem passar mal nem perder massa muscular."
               </p>
               <div className="flex items-center gap-3 mt-auto pt-4 border-t border-zinc-700/50">
                 <img
