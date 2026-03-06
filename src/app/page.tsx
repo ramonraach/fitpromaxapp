@@ -42,9 +42,7 @@ export default function LandingPage() {
                 Começar Teste Gratuito
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <p className="text-sm text-white/60">
-                3 dias grátis. Depois R$ 19,90/mês. Cancele quando quiser.
-              </p>
+
             </div>
           </div>
         </div>
