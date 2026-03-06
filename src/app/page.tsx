@@ -50,61 +50,132 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Pain Points Section */}
+      {/* Testimonials Section */}
       <section className="py-20 sm:py-32 bg-black border-t border-white/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-8">
-            {/* Title */}
-            <div className="text-center mb-12">
-              <div className="inline-block px-8 py-6 bg-zinc-800/60 backdrop-blur-sm rounded-3xl border border-zinc-700/50 shadow-2xl shadow-zinc-900/50">
-                <h2 className="text-2xl sm:text-3xl font-bold text-white leading-tight">
-                  Você se identifica com alguma dessas situações?
-                </h2>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              O que nossos usuários dizem
+            </h2>
+            <p className="text-white/50 text-lg">Resultados reais de pessoas reais</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-zinc-900 border border-zinc-700/50 rounded-2xl p-6 flex flex-col gap-4">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "Perdi 8kg em 3 meses sem deixar de comer o que gosto. O app monta o treino e a dieta certinho pro meu objetivo. Não acreditava que funcionaria tão rápido."
+              </p>
+              <div className="flex items-center gap-3 mt-auto pt-4 border-t border-zinc-700/50">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Camila R."
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <p className="text-white font-semibold text-sm">Camila R.</p>
+                  <p className="text-white/40 text-xs">São Paulo, SP</p>
+                </div>
               </div>
             </div>
 
-            {/* Pain Points - Questions */}
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-white/90 mt-3 flex-shrink-0"></div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-white/90 leading-tight">
-                  Cansado de treinar e não ver resultado?
-                </h3>
+            {/* Testimonial 2 */}
+            <div className="bg-zinc-900 border border-zinc-700/50 rounded-2xl p-6 flex flex-col gap-4">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                ))}
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-white/90 mt-3 flex-shrink-0"></div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-white/90 leading-tight">
-                  Não saber o que comer?
-                </h3>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-white/90 mt-3 flex-shrink-0"></div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-white/90 leading-tight">
-                  Sem ideia de quantas calorias consome?
-                </h3>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-white/90 mt-3 flex-shrink-0"></div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-white/90 leading-tight">
-                  Seguir dietas genéricas que não funcionam pro seu objetivo?
-                </h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "Treino há 2 anos e sempre estagnava. Com o FitProMax finalmente entendi onde estava errando na alimentação. Ganhei 4kg de massa em 6 semanas. Recomendo demais."
+              </p>
+              <div className="flex items-center gap-3 mt-auto pt-4 border-t border-zinc-700/50">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Lucas M."
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <p className="text-white font-semibold text-sm">Lucas M.</p>
+                  <p className="text-white/40 text-xs">Curitiba, PR</p>
+                </div>
               </div>
             </div>
 
-            {/* Divider */}
-            <div className="py-8">
-              <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+            {/* Testimonial 3 */}
+            <div className="bg-zinc-900 border border-zinc-700/50 rounded-2xl p-6 flex flex-col gap-4">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "Não sabia nada de dieta e o app me explicou tudo de forma simples. Em 2 meses meu condicionamento físico mudou completamente. Valeu cada centavo!"
+              </p>
+              <div className="flex items-center gap-3 mt-auto pt-4 border-t border-zinc-700/50">
+                <img
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="Fernanda T."
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <p className="text-white font-semibold text-sm">Fernanda T.</p>
+                  <p className="text-white/40 text-xs">Belo Horizonte, MG</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom row - 2 testimonials centered */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-3xl mx-auto">
+            {/* Testimonial 4 */}
+            <div className="bg-zinc-900 border border-zinc-700/50 rounded-2xl p-6 flex flex-col gap-4">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "Tentei vários apps antes e desistia em uma semana. O FitProMax é diferente, me mantém motivado com os treinos variados e o acompanhamento de progresso. Já são 4 meses seguidos!"
+              </p>
+              <div className="flex items-center gap-3 mt-auto pt-4 border-t border-zinc-700/50">
+                <img
+                  src="https://randomuser.me/api/portraits/men/54.jpg"
+                  alt="Rafael S."
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <p className="text-white font-semibold text-sm">Rafael S.</p>
+                  <p className="text-white/40 text-xs">Porto Alegre, RS</p>
+                </div>
+              </div>
             </div>
 
-            {/* Answer - The Truth */}
-            <div className="text-center space-y-4">
-              <div className="inline-block px-10 py-8 bg-zinc-800/60 backdrop-blur-sm rounded-3xl border border-zinc-700/50 shadow-2xl shadow-zinc-900/50">
-                <p className="text-lg sm:text-xl text-white leading-relaxed mb-3">
-                  A maioria das pessoas não falha por falta de esforço.
-                </p>
-                <p className="text-xl sm:text-2xl font-bold text-white leading-relaxed">
-                  Falha por falta de estratégia e direção.
-                </p>
+            {/* Testimonial 5 */}
+            <div className="bg-zinc-900 border border-zinc-700/50 rounded-2xl p-6 flex flex-col gap-4">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "Minha nutricionista ficou surpresa com minha evolução. O app me ajudou a entender minha alimentação de verdade. Emagreci 12kg e nunca me senti tão bem!"
+              </p>
+              <div className="flex items-center gap-3 mt-auto pt-4 border-t border-zinc-700/50">
+                <img
+                  src="https://randomuser.me/api/portraits/women/26.jpg"
+                  alt="Juliana P."
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <p className="text-white font-semibold text-sm">Juliana P.</p>
+                  <p className="text-white/40 text-xs">Rio de Janeiro, RJ</p>
+                </div>
               </div>
             </div>
           </div>
