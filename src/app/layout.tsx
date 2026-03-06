@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Criado com a Lasy",
-  description: "Projeto criado com Lasy AI",
+  title: "FitProMax | Treino e Dieta Personalizados",
+  description: "Seu plano personalizado em minutos",
 };
 
 export default function RootLayout({
